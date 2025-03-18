@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+#generating a scatter plot with random data using matplotlib
+#ensure you have installed numpy and matplotlib
+>>>>>>> cc3fb25ae0ee038557a335f6a1d028121ea990d8
 import numpy as np
 import matplotlib.pyplot as plt
 
