@@ -1,4 +1,5 @@
 #generating a scatter plot with random data using matplotlib
+#ensure you have installed numpy and matplotlib
 import numpy as np
 import matplotlib.pyplot as plt
 
