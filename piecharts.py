@@ -1,16 +1,11 @@
+from cProfile import label
+
 import numpy as np
 import matplotlib.pyplot as plt
+#Adding information to the piecharts
+votes=[13,10,26,33,40]
+people=["A","B","C","D","E"]
 
-lang =["Python","Java","C##","C","Javascript"]
-points=[40,30,15,9,6]
-#pulling items from the chart to highlight them a little bit.Cracking out a little bit
-explodes=[0,0,0,0,0.2]
-#writing percentages outside the charts
-#setting percentage distance outside the charts
-#starting angle
-
-plt.pie(points,labels=lang ,explode=explodes,
-        autopct="%.2f%%S",
-        pctdistance=1.62,
-        startangle=90)
+plt.pie(votes,labels=None)
+plt.legend(labels =people)
 plt.show()
