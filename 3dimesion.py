@@ -5,11 +5,20 @@ import random
 
 ax =plt.axes(projection="3d")
 
-x =np.arange(0,50,0.1)
-y =np.arange(0,50,0.1)
-z=np.cos(x+y)
+x =np.arange(-5,5,0.1)
+y =np.arange(-5,5,0.1)
 
-ax.plot(x, y, z)
+X,Y =np.meshgrid(x,y)
+
+
+Z=np.sin(X)* np.cos(Y)
+
+
+ax.plot_surface(X,Y,Z)
 ax.set_title("3d Plot")
 ax.set_xlabel("Test")
+
 plt.show()
+
+
+plt.savefig("Scatterplot.png")
