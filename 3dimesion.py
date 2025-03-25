@@ -1,25 +1,14 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import style
-
 import random
 
-ax =plt.axes(projection="3d")
+heads_tails=[0,0]
 
-x =np.arange(-5,5,0.1)
-y =np.arange(-5,5,0.1)
-
-X,Y =np.meshgrid(x,y)
-
-
-Z=np.sin(X)* np.cos(Y)
-
-#adding some colors using spectral function
-ax.plot_surface(X,Y,Z , cmap="Spectral")
-ax.set_title("3d Plot")
-ax.set_xlabel("Test")
-
+for _ in range(100000):
+     heads_tails[random.randint(0,1)] += 1
+     plt.bar(["Heads","Tails"], heads_tails,color=["red","blue"])
+     plt.pause(0.01)
 plt.show()
 
-
-plt.savefig("Scatterplot.png")
+#animation using pause method
